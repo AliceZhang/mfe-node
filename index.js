@@ -5,7 +5,7 @@ const cors = require("cors");
 
 //--------------------- Init App ---------------------
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 5000;
 
 //--------------------- Serve Assets ---------------------
 if (process.env.NODE_ENV === "production") {
