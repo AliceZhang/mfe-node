@@ -22,7 +22,7 @@ const history = createBrowserHistory();
 
 const fetchData = async () => {
   try {
-    let resonse = await axios("http://localhost:5001/home");
+    let resonse = await axios("http://localhost:8080/home");
     if (resonse.status) {
       alert("hooray");
     } else {
