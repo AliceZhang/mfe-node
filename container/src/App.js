@@ -1,5 +1,6 @@
 import React, { lazy, Suspense, useState, useEffect } from 'react';
 import { Router, Route, Switch, Redirect } from 'react-router-dom';
+//import {ErrorBoundary} from 'react-error-boundary'
 import {
   StylesProvider,
   createGenerateClassName,
@@ -11,8 +12,8 @@ import Header from './components/Header';
 import axios from "axios";
 
 const MarketingLazy = lazy(() => import('./components/MarketingApp'));
-const Auth2Lazy = lazy(() => import('./components/Auth2App'));
-const DashboardLazy = lazy(() => import('./components/DashboardApp'));
+//const Auth2Lazy = lazy(() => import('./components/Auth2App'));
+//const DashboardLazy = lazy(() => import('./components/DashboardApp'));
 
 const generateClassName = createGenerateClassName({
   productionPrefix: 'co',
@@ -55,13 +56,7 @@ export default () => {
           />
           <Suspense fallback={<Progress />}>
             <Switch>
-              <Route path="/auth2">
-                <Auth2Lazy onSignIn={() => setIsSignedIn(true)} />
-              </Route>
-              <Route path="/dashboard">
-                {!isSignedIn && <Redirect to="/" />}
-                <DashboardLazy />
-              </Route>
+             
               <Route path="/" component={MarketingLazy} />
             </Switch>
           </Suspense>
