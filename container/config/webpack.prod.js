@@ -23,7 +23,7 @@ const prodConfig = {
     fetch(mapUrl).then(function(response) {
       response.json().then(function(data) {
 
-        var  marketingUrl = data.marketing.localhost.href;
+        var  marketingUrl = data.marketing.production.href;
         const script = document.createElement('script')
         script.src = marketingUrl
         script.onload = () => {

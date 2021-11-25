@@ -25,7 +25,7 @@ const fetchData = async () => {
   try {
     let resonse = await axios("http://localhost:8080/home");
     if (resonse.status) {
-      alert("hooray");
+     // alert("hooray");
     } else {
       alert("OH ! Snap....");
     }

@@ -1,0 +1,18 @@
+{
+  "Host": {
+    "localhost": {
+      "href": "http://localhost:8000"
+    },
+    "production": {
+      "href": "https://alicetest"
+    }
+  },
+  "marketing": {
+    "localhost": {
+      "href": "http://localhost:8081/remoteEntry.js"
+    },
+    "production": {
+      "href": "https://alicetest"
+    }
+  }
+}
