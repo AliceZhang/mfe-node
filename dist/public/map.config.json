@@ -12,7 +12,7 @@
       "href": "http://localhost:8081/remoteEntry.js"
     },
     "production": {
-      "href": "https://alicetest"
+      "href": "http://mfe-marketing-node-a-mfe-tenant-1.apps.ayzhang-large.cp.fyre.ibm.com/remoteEntry.js"
     }
   }
 }
